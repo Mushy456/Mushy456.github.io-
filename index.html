@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HKT's Personal Page </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5228ff9764.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="scroll-button">
+    <a href="#header"><i class="fas fa-arrow-up"></i></a>
+</div>
+<div id="header">
+    <nav>
+        <div class="navbar">
+        <!-- <img src="picsforweb/logo_transparent.png" class="logo"> -->
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#languages">Skills</a></li>
+            <li><a href="#about">Experience</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <i class="icon fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="icon fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header-text">
+            <p>High School Student</p>
+            <h1>Hi, I am <span>HKT</span> <br>from VNU-HCM High<br> School for the Gifted</h1>
+        </div>
+    </div>    
+</div>  
+<!-----------------------------------about--------------------------------------> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="picsforweb/aboutme.JPG">
+            </div>
+            <div class="about-col-2 reveal">
+                <h1 class="'subtitles">About Me</h1>
+                <p>Despite being an English major and in an English class, I found my love for programming during my first year in high school. I joined competitive programming, learned C++ as my first programming language, then picked up other languages like Python, Javascript, Java, HTML, CSS, and SQL,... along the way. I started participating in and created some coding projects myself to discover what I wanted to learn more about, and AI came as a great source of inspiration.</p>
+                <div class="tab-titles"> 
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('contact')">Contact</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                        <li><span>Game</span><br>Programming games</li>
+                        <li><span>AI/ML</span><br>Machine Learning models with Tensorflow<br></li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022</span><br>Intern at Ho Chi Minh City University of Technology</li>
+                        <li><span>2022 - Current</span><br>Research Assistant at Ho Chi Minh City University of Technology</li>
+                        <!-- <li><span>AI/ML</span><br>Machine Learning models with Tensorflow<br></li> -->
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education"> 
+                    <ul>
+                        <li><span>2017 - 2021</span><br>Quang Trung Secondary School</li>
+                        <li><span>2021 - Current</span><br>VNU-HCM High School for the Gifted</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="contact"> 
+                    <ul>
+                        <li><span>Facebook</span><br>https://www.facebook.com/hkt456</li>
+                        <li><span>Github</span><br>https://github.com/Mushy456</li>
+                        <li><span>Email</span><br>tamhuynhkhac@gmail.com</li>
+                        <li><span>Number</span>(+84)328429063<br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------------------- Languages ---------------------------------------------->
+
+<div class="language" id="languages">
+    <div class='content'>
+      <div class="title"><span>My Languages</span></div>
+      <div class="skills-details reveal">
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">HTML</div>
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="box">
+            <div class="topic">CSS</div>
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="box">
+            <div class="topic">Java</div>
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="box">
+            <div class="topic">JavaScript</div>
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+          <div class="box">
+            <div class="topic">C++</div>
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="box">
+           <div class="topic">Python</div>
+           <i class="fa-brands fa-python"></i>
+         </div>
+         <div class="box">
+           <div class="topic">Git/GitHub</div>
+           <i class="fa-solid fa-code-branch"></i>
+         </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-------------------------------------------- Contact ---------------------------------------------->
+
+<div id="Contact">
+    <div class="container reveal">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitles">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>tamhuynhkhac@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(+84)328429063</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name='submit-to-google-sheet'>  
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required> 
+                    <textarea name="Message" rows="6" placeholder="Your Message (p/s: You should contact me via email cuz I'm not sure when I will check the database =>)"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright 2023 All Rights Reserved. Made with <i class="fa-solid fa-heart"></i> by HKT</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tablink of tabcontents){
+            tablink.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var menu=document.getElementById("sidemenu");
+    function openmenu(){
+        menu.style.right="0";
+    }
+    function closemenu(){
+        menu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxrB60sFPf8TYEf_4shmVfXstJ9Ufe9dvnFOApE_k-xSvfrrC96UYPeMmxASiMUVKmb/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg") 
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            // console.log("success")
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            }, 5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    <script type="text/javascript">
+        window.addEventListener('scroll',reveal);
+        function reveal(){
+            var reveals=document.querySelectorAll('.reveal');
+            for(var i=0; i<reveals.length; i++){
+                var windowheight=window.innerHeight;
+                var revealtop=reveals[i].getBoundingClientRect().top;
+                var revealpoint=150;
+
+                if(revealtop<windowheight-revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+
+  <script async src="interact.js" defer></script>
+  </body>
+</html>
